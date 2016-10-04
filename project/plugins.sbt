@@ -16,3 +16,11 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.7")
 addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.0.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.0.2")
+
+// cinnamon plugin
+
+addSbtPlugin("com.lightbend.cinnamon" % "sbt-cinnamon" % "2.0.0")
+
+credentials += Credentials(Path.userHome / ".lightbend" / "commercial.credentials")
+
+resolvers += Resolver.url("lightbend-commercial", url("https://repo.lightbend.com/commercial-releases"))(Resolver.ivyStylePatterns)
